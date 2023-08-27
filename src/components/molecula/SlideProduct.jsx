@@ -29,7 +29,7 @@ const [index, setIndex] = useState (0)
     return (
         <section className='grid md:grid-cols-4 md:gap-4'>
            <div className='col-span-4 relative '>
-                 <img src={ARRAY_IMGS[index]} alt="" className='aspect-[16/9]'/>
+                 <img src={ARRAY_IMGS[index]} alt="" className='aspect-[16/9] w-full'/>
                  <div className='absolute top-1/2 left-0 -translate-y-1/2 flex w-full justify-between px-2'>
                     <button className='h-6 w-6 rounded-full bg-slate-200 grid places-items-center' onClick={clickPrev}><PrevButton/></button>
                     <button className='h-6 w-6 rounded-full bg-slate-200 grid places-items-center' onClick={clickNext}><NextButton/></button>

@@ -12,7 +12,7 @@ const MainHeader = () => {
         'hidden gap-y-4 font-bold w-4/5 md:mr-auto md:flex md:flex-row gap-3 md:static md:p-0')   //estado inicial del estado
 
     const ButtonOPenMenu = () => {
-        setNavClass('absolute top-0 left-0 flex flex-col h-full p-8 gap-y-4 font-bold w-4/5 md:mr-auto md:flex md:flex-row gap-3 md:static md:p-0 bg-white') //cuando apreto el boton hamburguesa baja el menu
+        setNavClass('z-10 absolute top-0 left-0 flex flex-col h-full p-8 gap-y-4 font-bold w-4/5 md:mr-auto md:flex md:flex-row gap-3 md:static md:p-0 bg-white') //cuando apreto el boton hamburguesa baja el menu
     };
 
     const ButtonCloseMenu = () => {
@@ -22,7 +22,7 @@ const MainHeader = () => {
     return (
         //aca en header con el bg agregas color
         <>
-            <header className='  mx-auto flex items-center gap-2 '>
+            <header className='container mx-auto flex items-center gap-2 '>
                 <button className='md:hidden' onClick={ButtonOPenMenu}>
                     <MenuIcons />
                 </button>
@@ -35,7 +35,7 @@ const MainHeader = () => {
                     </button>
                     <NavLink text="Reserva"/>
                     <NavLink text="Oferta"/>
-                    <NavLink text="Oficina"/>
+                    <NavLink text="Oficinas"/>
                     {/* <NavLink text="Collecci5"/>
                     <NavLink text="Colleccion6"/> */}
                 </nav>
