@@ -5,6 +5,9 @@ import IconCart from '../atoms/CartIcons';
 import CloseIcon from '../atoms/CloseIcon';
 import MenuIcons from '../atoms/MenuIcons';
 import NavLink from '../atoms/NavLink';
+import Peugeot208min from  "../../assets/Imagenes/Autos/Peugeot208mini.jpg"
+import DeleteIcon from  "../atoms/DeleteIcon"
+import CartDetails from './CartDetails';
 
 const MainHeader = () => {
 
@@ -22,7 +25,7 @@ const MainHeader = () => {
     return (
         //aca en header con el bg agregas color
         <>
-            <header className='container mx-auto flex items-center gap-2 '>
+            <header className=' mx-auto flex items-center gap-2 '>
                 <button className='md:hidden' onClick={ButtonOPenMenu}>
                     <MenuIcons />
                 </button>
@@ -30,7 +33,7 @@ const MainHeader = () => {
                 <img src={Logo} alt="" className='w-24 mr-auto md:mr-2 md:ml-1' />
 
                 <nav className={navClass}>
-                    <button className='mb-3 md:hidden' onClick={ButtonCloseMenu}>
+                    <button className='mb-2 md:hidden' onClick={ButtonCloseMenu}>
                         <CloseIcon />
                     </button>
                     <NavLink text="Reserva"/>
@@ -44,6 +47,7 @@ const MainHeader = () => {
                         <IconCart />
                     </button>
                     <img className='mr-12 md:' src={avatar} alt="" />
+                    <CartDetails/>
                 </div>
             </header>
             <span className='md:block h-[1px] w-full bg-gray-700'></span>

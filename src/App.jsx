@@ -5,7 +5,7 @@ import MainProduct from './components/molecula/MainProduct';
 const App = () => {
     return (
         <>
-          <MainHeader/>
+           <MainHeader/>
            <MainProduct/>
         </>
     )
